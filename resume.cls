@@ -45,7 +45,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-10pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generated PDF is machine readable/ATS parsable
@@ -126,7 +126,7 @@
 % ###### Professional Experience ######
 
 \newcommand{\firstCompanyHeading}[4]{
-  \vspace{-5pt}\item
+  \vspace{-8.3pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
