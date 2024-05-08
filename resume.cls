@@ -1,6 +1,6 @@
 % resume.cls
-% Author: Aras Gungore
-% License: MIT
+% Author: Bhaskar Dixit
+% License: DUD
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{resume}[2024/04/02 Resume class]
@@ -52,15 +52,17 @@
 \pdfgentounicode=1
 
 % Custom commands
-
+% ###### COMMON COMMANDS ######
 \newcommand{\resumeItem}[1]{
   \item\small{
     {#1 \vspace{-2pt}}
   }
 }
 
+\newcommand{\roleItem}[1]{\item{\small #1}}
+
 \newcommand{\resumeItemHead}[2]{%
-    \vspace{6pt} % Adjust the vertical space as needed
+    \vspace{3pt} % Adjust the vertical space as needed
     \noindent
     \hspace{-\leftmargin} % Align the box to the left of the page
     \makebox[0.8\linewidth][l]{\textbf{#1}}%
@@ -75,7 +77,6 @@
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
-
 
 \newcommand{\resumeSubSubheading}[2]{
     \vspace{-2pt}\item
@@ -119,5 +120,50 @@
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-10pt}}
+
+
+
+% ###### Professional Experience ######
+
+\newcommand{\firstCompanyHeading}[4]{
+  \vspace{-5pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\projectOneHead}[2]{%
+    \vspace{4pt} % Adjust the vertical space as needed
+    \noindent
+    \hspace{-\leftmargin} % Align the box to the left of the page
+    \makebox[0.8\linewidth][l]{\textbf{#1}}%
+    \hfill
+    \makebox[0.2\linewidth][r]{\textbf{#2}} \\
+}
+
+\newcommand{\projectTwoHead}[2]{%
+    \vspace{-5pt} % Adjust the vertical space as needed
+    \noindent
+    \hspace{-\leftmargin} % Align the box to the left of the page
+    \makebox[0.8\linewidth][l]{\textbf{#1}}%
+    \hfill
+    \makebox[0.2\linewidth][r]{\textbf{#2}} \\
+}
+
+
+% ###### Education ######
+
+
+% ###### Skills ######
+
+
+% ###### Awards & Achievement ######
+
+
+% ###### Projects ######
+
+
+
 
 \endinput

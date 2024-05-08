@@ -29,8 +29,8 @@
 \end{center}
 
 %----------- PROFILE -----------
-\section{Profile}
-{Seasoned, forward-looking Software Engineer with 5+ years' background in creating and executing innovative software solutions to enhance business productivity. Reliable team player offering exceptional analytical and problem management skills and the important ability to think critically and solve complex problems. Consistently recognized as a hands-on and competent leader, skilled at coordinating cross-functional teams in a fast-paced, deadline-driven environment to steer timely project completion within budgetary constraints.}
+% \section{Profile}
+% {Seasoned, forward-looking Software Engineer with 5+ years' background in creating and executing innovative software solutions to enhance business productivity. Reliable team player offering exceptional analytical and problem management skills and the important ability to think critically and solve complex problems. Consistently recognized as a hands-on and competent leader, skilled at coordinating cross-functional teams in a fast-paced, deadline-driven environment to steer timely project completion within budgetary constraints.}
 
 %----------- EXPERIENCE -----------
 \section{Professional Experience}
@@ -43,12 +43,16 @@
       {Software Developer}{Oct 2021 \textbf{--} Present, Full-time}
 
 \resumeItemListStart
-\resumeItemHead
+\projectOneHead
 {Xcelerator Admin Console  (\normalfont \textit{for Siemens})}{Oct 2021 -- Present}
 \begin
-    {itemize}[leftmargin=0.15in, label={-}]
-    \item Description of your contributions and achievements on Project 1.
-    \item Additional details as necessary.
+    {itemize}[leftmargin=0in, label={-}]
+    \item\small Successfully rebuilt the project utilizing Angular and Spring Boot, modernizing the technology stack and enhancing performance and scalability.
+    \item\small Implement agile methodologies to swiftly develop and test bug fixes, ensuring thorough validation to prevent regression and maintain code stability.
+    \item\small Utilize technical expertise to implement fixes, patches, or configuration changes, ensuring comprehensive mitigation of security risks.
+    \item\small Developed intricate web components and corresponding GraphQL queries, enhancing frontend functionality and data retrieval efficiency.
+    \item\small Standardized deployment pipelines across Zeus projects by architecting a comprehensive GitLab YAML configuration, optimizing workflow consistency and collaboration efficiency.
+    
 \end{itemize}
 
 \resumeItemListEnd
@@ -56,26 +60,26 @@
 
 % COMPANY - Paramatrix Technologies
 \resumeSubHeadingListStart
-\resumeSubheading
+\firstCompanyHeading
       {Paramatrix Technologies Pvt Ltd}{Mumbai, Maharashtra}
       {Software Engineer}{Jul 2018 \textbf{--} Oct 21, Full-time}
 
 \resumeItemListStart
-\resumeItemHead
+\projectOneHead
 {Reliability (\normalfont \textit{for Kotak Securities})}
 {Aug 2019 -- Oct 2021}
 \begin
-    {itemize}[leftmargin=0.15in, label={-}]
-    \item Involvment in each SDLC phase of any change request starting from requirement gathering phase to development and deployment.
-    \item Responsible for design and development of both UI and Database Design.
+    {itemize}[leftmargin=0in, label={-}]
+    \item\small Comprehensively analyze and understand the Client Requirement Forms (CRFs), ensuring a clear understanding of project objectives, specifications, and client expectations.
+    \item\small Implement efficient Optmization, data structures, and caching mechanisms to streamline data retrieval and processing, reducing latency and improving user experience.
 \end{itemize}
 
-\resumeItemHead
+\projectTwoHead
 {Customer Relationship Management (\normalfont \textit{for Kotak Securities})}
 {Sep 2018 -- Jul 2019}
-\begin{itemize}[leftmargin=0.15in, label={-}]
-    \item Description of your contributions and achievements on Project 2.
-    \item Additional details as necessary.
+\begin{itemize}[leftmargin=0in, label={-}]
+    \item\small Involvement in each SDLC phase of any change request starting from requirement gathering phase to development and deployment.
+    \item\small Create and managing schema objects such as tables, views, indexes, stored procedures, and triggers and maintaining Referential Integrity.
 \end{itemize}
 
 % Add more projects as necessary
@@ -114,28 +118,21 @@
   \resumeSubHeadingListEnd
 
 
-%----------- AWARDS & ACHIEVEMENTS -----------
+%----------- SECTION:: AWARDS & ACHIEVEMENTS -----------
 \section{Awards \& Achievements}
   \vspace{2pt}
   \resumeSubHeadingListStart
     \small{\item{
-        \textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University. (Jul 2023)} \\ \vspace{3pt}
+        \textbf{Pat On Back:}{ Successfully spearheaded the development of a cutting-edge web application utilizing Angular and Spring Boot frameworks, initiated from scratch.(Jan 2023)} \\ \vspace{3pt}
 
-        \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK). (Dec 2021 \textbf{--} Jun 2022)} \\ \vspace{3pt}
-    
-        % \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)} \\ \vspace{3pt}
+        \textbf{Team Award}{ Completion of our Quarterly development task, delivered promptly and with precision.(Jun 2020)} \\ \vspace{3pt}
         
-        \textbf{KYK Outstanding Success Scholarship:}{ Awarded to students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK). (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
-        
-        % \textbf{Boğaziçi University Success Scholarship:}{ Awarded to students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University. (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
-        
-        \textbf{Kocaeli Science High School Valedictorian Award:}{ Graduated as the highest ranked student. (Jun 2018)}
     }}
   \resumeSubHeadingListEnd
 
 
 
-%----------- PROJECTS -----------
+%----------- SECTION:: PROJECTS -----------
 
 \section{Projects}
     \vspace{3pt}
@@ -144,10 +141,24 @@
       \resumeProjectHeading
         {\textbf{Exam Portal} $|$ \emph{\href{https://github.com/devBhaskar98/Exam-Portal}{\color{blue}GitHub}}}{}
           \resumeItemListStart
-            \resumeItem{A Angular and Spring Boot project which implements categorwise MCQ Test for User published by Admin of site. Th } 
+            \resumeItem{
+            The Angular-Spring Boot MCQ Test Platform is a web-based application designed to facilitate categorically organized multiple-choice question (MCQ) tests for users. 
+            % Admins can create quizzes by defining categories and populating them with questions, while users (students) can access these quizzes and attempt to solve them. 
+            % The application utilizes Angular for the frontend interface, Spring Boot for backend functionality, and MySQL for database management. 
+            } 
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+        {\textbf{Automatic Image and Video Colourization using Deep Learning} $|$ \emph{\href{https://github.com/BRAiNCHiLD95/ImageColourisationDL}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{
+            This project aims to enhance automated colourisation systems for monochrome and black and white images/videos by addressing existing challenges such as colour inconsistency, saturation issues, and inaccuracies in bright environments. 
+            % Through advancements in deep learning architectures and image processing techniques, the objective is to develop a more efficient and accurate colourisation process, reducing the need for manual intervention and improving overall results.
+            } 
           \resumeItemListEnd
       
     \resumeSubHeadingListEnd
+
 
 
 
@@ -189,12 +200,12 @@
 
 
 
-%----------- HOBBIES -----------
+% % ----------- HOBBIES -----------
 
 % \section{Hobbies}
-  % \resumeSubHeadingListStart
-    % \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
-  % \resumeSubHeadingListEnd
+%   \resumeSubHeadingListStart
+%     \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
+%   \resumeSubHeadingListEnd
 
 
 
