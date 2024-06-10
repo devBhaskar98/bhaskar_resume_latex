@@ -45,8 +45,17 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-10pt}\scshape\raggedright\large
+  \vspace{-8pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+% Bold and First letter uppercase missing the spacing
+% \titleformat{\section}
+% {\bfseries\vspace{-10pt}\scshape\raggedright\large}
+% {\MakeTextUppercase }
+% {0em}
+% {}
+% [\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generated PDF is machine readable/ATS parsable
 \pdfgentounicode=1
