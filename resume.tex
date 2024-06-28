@@ -6,6 +6,14 @@
 
 \documentclass{resume}
 
+
+
+%
+% RESUME TIPS:
+% 1. Consider adding at least 5 specific achievements or impact you had in your job (e.g. time saved, increase in sales, etc).
+% 2. Showcase your soft skills like flexible, analytical, troubleshooting
+%
+
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
@@ -13,7 +21,7 @@
 %---------- HEADING ----------
 
 \begin{center}
-    \textbf{\Huge \scshape Bhaskar Dixit} \\
+    \textbf{\Huge \scshape Bhaskar Dixit} 
     % \vspace{-9pt}
     % \begin{center} \textbf{ \large Full Stack Software Engineer}\end{center}
      % \vspace{10pt}
@@ -55,19 +63,21 @@
         \begin
             {itemize}[leftmargin=0in, label={-}]
             \item\small It is a web application for customer adminstration to manage subscriptions of Cloud SaaS Products.
-            \item\small Rebuild the project using Angular and Spring Boot, significantly improving performance and scalability.
-            \item\small Apply agile methodologies to accelerate development and testing cycles for bug fixes.
+            \item\small Revamp the project using Angular and Spring Boot, significantly improving performance and scalability.
+            % \item\small Apply agile methodologies to accelerate development and testing cycles for bug fixes.
+            \item\small Architected a solution to serve Angular bundle files from CloudFront, handling requests via Kong Gateway on AWS, which reduced load times by over 66\%, from 3 seconds to less than 1 second.
+            \item\small Implementing asynchronous methods in our Spring Boot APIs to process requests concurrently and reduce response times by 40\%.
+            % \item\small Implement security measures, including fixes, patches, and configuration changes, to effectively mitigate risks.
+            \item\small Maintain code stability through rigorous testing and quality assurance practices, leveraging scheduled and continuous integration (CI) pipelines.
+            \item\small Configure Jest for Node.js library and achieve 80\% code coverage across the entire project.
             \item\small Oversee new product releases, coordinating development and QA testing, manage deployments to production with CI/CD pipelines, and showcase new features during sprint reviews.
-            \item\small Architect a solution to serve Angular bundle files from CloudFront, handling requests via Kong Gateway on AWS.
-            \item\small Implement security measures, including fixes, patches, and configuration changes, to effectively mitigate risks.
-            \item\small Ensure code stability through comprehensive testing and quality assurance practices.
             \item\small Streamline deployment processes across Zeus projects by creating a unified GitLab YAML configuration, enhancing workflow consistency and team collaboration.
             
         \end{itemize}
 
         % Skills
         \begin{itemize}[leftmargin=-0.15in, label={}]
-            \item\textit{\textbf{\fontsize{10}{12}\selectfont Java, Typescript, Spring Boot, Node JS, Angular, Web Application, Microservices, Docker, Kibana, Gitlab, Coverity, Sonar, AWS, VS, VS Code, Postman, Git, Jest, Junit}}
+            \item\textit{\textbf{\fontsize{10}{12}\selectfont Spring Boot, Java, NodeJS, Angular, Typescript, Jest, JUnit, Mockito, Gitlab CI/CD, Docker, AWS, Coverity, Sonar, Kibana, Datadog, VS Code, Postman, Web Application, Microservices, Agile Model }}
         \end{itemize}
 
     
@@ -89,7 +99,6 @@
             \begin
                 {itemize}[leftmargin=0in, label={-}]
                 \item\small It is a banking MIS System to view the account/customer level reports.
-
                 \item\small Comprehensively analyze and understand the Client Requirement Forms (CRFs), ensuring a clear understanding of project objectives, specifications, and client expectations.
                 \item\small Implement UI and efficient Optimization, data structures, and caching mechanisms to streamline data retrieval and processing, reducing latency and improving user experience.
                 % \item\small Creation of SSIS Package to upload the files from front end.
@@ -110,15 +119,15 @@
             \begin{itemize}[leftmargin=0in, label={-}]
                 \item\small It is a application handles all the service request which are raised by customers.
                 \item\small Active participation in all SDLC phases for change requests, spanning from requirement gathering to  deployment.
-                \item\small Create and managing schema objects and maintaining Referential Integrity.
-                \item\small Created SSIS package to populate data from various data sources.
+                \item\small Develop and manage schema objects and maintaining Referential Integrity, and improved db performance upto 30\%.
+                \item\small Developed SSIS packages to integrate data from multiple sources and generate comprehensive reports.
             \end{itemize}
                 
     
             % Skills
             \begin{itemize}[leftmargin=-0.15in, label={}]
                 \item\textit{\textbf{\fontsize{10}{12}\selectfont 
-                    Angular 5, MS-SQL, MVC, Java, Web API, SSIS, SSRS, SVN, VS Code, Postman, Git
+                    Angular 5, MS-SQL, MVC, Java, Web API, SSIS, SVN, VS Code, Eclipse, Postman, Git
                 }}
             \end{itemize}
     \resumeItemListEnd
@@ -171,13 +180,13 @@
 
 %----------- SECTION:: PROJECTS -----------
 
-\section{Projects}
+\section{Hobby Projects}
     \vspace{3pt}
     \resumeSubHeadingListStart
       
       \resumeProjectHeading
         {\textbf{Exam Portal} $|$ \emph{\href{https://github.com/devBhaskar98/Exam-Portal}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
+          \resumeItemHobbyListStart
             \resumeItem{
             The Angular-Spring Boot MCQ Test Platform is a web-based application designed to facilitate categorically organized multiple-choice question (MCQ) tests for users. 
             Admins can create quizzes by defining categories and populating them with questions, while users (students) can access these quizzes and attempt to solve them. 
@@ -187,7 +196,7 @@
 
         \resumeProjectHeading
         {\textbf{Automatic Image and Video Colourization using Deep Learning} $|$ \emph{\href{https://github.com/BRAiNCHiLD95/ImageColourisationDL}{\color{blue}GitHub}}}{}
-          \resumeItemListStart
+          \resumeItemHobbyListStart
             \resumeItem{
             This project aims to enhance automated colourisation systems for monochrome and black and white images/videos by addressing existing challenges such as colour inconsistency, saturation issues, and inaccuracies in bright environments.
             Through advancements in deep learning architectures and image processing techniques, the objective is to develop a more efficient and accurate colourisation process, reducing the need for manual intervention and improving overall results.
