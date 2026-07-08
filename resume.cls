@@ -150,7 +150,16 @@
     }
     
     \newcommand{\projectTwoHead}[2]{%
-        \vspace{-4pt} % Adjust the vertical space as needed
+        \vspace{-2pt} % Adjust the vertical space as needed
+        \noindent
+        \hspace{-\leftmargin} % Align the box to the left of the page
+        \makebox[0.8\linewidth][l]{\textbf{#1}}%
+        \hfill
+        \makebox[0.2\linewidth][r]{\textbf{#2}} \\
+    }
+
+    \newcommand{\projectThreeHead}[2]{%
+        \vspace{-2pt} % Adjust the vertical space as needed
         \noindent
         \hspace{-\leftmargin} % Align the box to the left of the page
         \makebox[0.8\linewidth][l]{\textbf{#1}}%
